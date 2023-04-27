@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_sociallinks",
+  "info": {
+    "displayName": "sociallink"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "Github",
+        "Twitter"
+      ]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
