@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "status_devices",
+  "info": {
+    "singularName": "status-device",
+    "pluralName": "status-devices",
+    "displayName": "status_device"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}

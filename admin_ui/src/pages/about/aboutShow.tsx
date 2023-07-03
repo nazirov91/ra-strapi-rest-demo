@@ -1,6 +1,6 @@
 import {
   ArrayField,
-  Button,
+  /*Button,*/
   Datagrid,
   ImageField,
   RichTextField,
@@ -10,19 +10,12 @@ import {
 } from "react-admin";
 
 export const AboutShow = (props: any) => {
-  const { data, setEdit } = props;
+  const { data, /*setEdit*/ } = props;
   return (
+
+      /* редактировать, вставить сюда! вниз под <>*/
     <>
-      <Button
-        label="Edit"
-        size="large"
-        color="primary"
-        sx={{
-          marginTop: "1rem",
-          width: "1rem",
-        }}
-        onClick={() => setEdit(true)}
-      />
+      
       <SimpleShowLayout record={data}>
         <TextField source="title" />
         <RichTextField source="content" />
@@ -37,3 +30,16 @@ export const AboutShow = (props: any) => {
     </>
   );
 };
+
+/*
+<Button
+        label="Edit"
+        size="large"
+        color="primary"
+        sx={{
+          marginTop: "1rem",
+          width: "1rem",
+        }}
+        onClick={() => setEdit(true)}
+      />
+*/
