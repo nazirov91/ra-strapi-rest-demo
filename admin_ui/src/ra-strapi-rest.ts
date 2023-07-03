@@ -137,7 +137,7 @@ const raStrapiRest = (apiUrl: string, httpClient = fetchUtils.fetchJson): DataPr
         }
       }
       return json;
-    };
+    }; 
 
     return Array.isArray(input) ? input.map(processItem) : [processItem(input)][0];
   };
@@ -245,7 +245,7 @@ const raStrapiRest = (apiUrl: string, httpClient = fetchUtils.fetchJson): DataPr
       const url = `${apiUrl}/${resource}`;
       const res = await processRequest(url, {
         method: "POST",
-        body: JSON.stringify(params.data),
+        body: JSON.stringify({data: params.data}),
       });
       return convertHTTPResponse(res, CREATE, { data: params.data });
     },

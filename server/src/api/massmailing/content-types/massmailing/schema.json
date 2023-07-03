@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "massmailings",
+  "info": {
+    "singularName": "massmailing",
+    "pluralName": "massmailings",
+    "displayName": "Mass mailing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group.group"
+    },
+    "time_start": {
+      "type": "integer",
+      "min": 0,
+      "default": 500
+    },
+    "time_end": {
+      "type": "integer",
+      "min": 0,
+      "default": 500
+    },
+    "datetime_start": {
+      "type": "datetime"
+    },
+    "devices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::device.device"
+    },
+    "mailing_status": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mailing-status.mailing-status"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "mass_mailings"
+    }
+  }
+}

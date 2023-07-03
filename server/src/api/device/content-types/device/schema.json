@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "devices",
+  "info": {
+    "singularName": "device",
+    "pluralName": "devices",
+    "displayName": "device",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "biginteger"
+    },
+    "title": {
+      "type": "string"
+    },
+    "payment_date_start": {
+      "type": "datetime"
+    },
+    "payment_date_close": {
+      "type": "datetime"
+    },
+    "status_device": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::status-device.status-device"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "devices"
+    }
+  }
+}

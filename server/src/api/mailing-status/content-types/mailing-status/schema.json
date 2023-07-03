@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mailing_statuses",
+  "info": {
+    "singularName": "mailing-status",
+    "pluralName": "mailing-statuses",
+    "displayName": "Mailing status"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}
