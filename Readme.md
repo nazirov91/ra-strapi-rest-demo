@@ -10,7 +10,7 @@
 
 ### Start the React-admin project with [VITE](https://vitejs.dev/)
 
-1. Navigate into server = `cd admin_ui`
+1. Navigate into admin_ui = `cd admin_ui`
 2. Run `yarn` or `npm install`
 3. Once the dependencies are installed, run `yarn build` and then `yarn dev`
 4. Create an `.env` file in the main admin_ui directory, and add an entry for the API token `VITE_STRAPI_API_TOKEN=[YOUR STRAPI API TOKEN HERE]`
